@@ -51,6 +51,13 @@ handle this interactively via;
 rasa interactive
 ```
 
+## Contributing
+
+If you're interested in expanding what pokebot can do; we're all ears!
+
+1. We would love it if people could add training data to the repository. 
+2. We would love it if folks could think of ways to make pokebot more awesome in terms of features. Let's discuss these in an issue before making a PR though. 
+
 ---  
 
 ## About Rasa
