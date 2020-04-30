@@ -65,7 +65,7 @@ rasa interactive
   [Read The Docs](https://rasa.com/docs/)
 
 - **I'm ready to install Rasa 🚀**
-  [Installation](https://rasa.com/docs/rasa/user-guide/installation/)
+  [Written Installation Guide](https://rasa.com/docs/rasa/user-guide/installation/) - [Video Guides](https://www.youtube.com/playlist?list=PL75e0qA87dlEWUA5ToqLLR026wIkk2evk)
 
 - **I want to learn how to use Rasa 🚀**
   [Tutorial](https://rasa.com/docs/rasa/user-guide/rasa-tutorial/)
@@ -73,5 +73,5 @@ rasa interactive
 - **I have a question ❓**
   [Rasa Community Forum](https://forum.rasa.com/)
 
-- **I would like to contribute 🤗**
-  [How to Contribute](#how-to-contribute)
+- **Explore More Starter Kits ⌨️**
+  [Financial Demo](https://github.com/RasaHQ/financial-demo) [Medicare Locator Demo](https://github.com/RasaHQ/medicare_locator)
