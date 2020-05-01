@@ -1,3 +1,5 @@
+<img src="images/logo.png" width=150 height=200 align="right">
+
 # Pokemon Demo Bot 
 
 This is a demonstration of a digital assistant that can answer questions about pokemon. This is an open project and anybody can contribute to it. 
@@ -5,7 +7,7 @@ This is a demonstration of a digital assistant that can answer questions about p
 To run the assistant locally you'll first need to clone. 
 
 ```
-git clone 
+git clone git@github.com:RasaHQ/pokedex-demo.git
 ```
 
 Next, install rasa. 
