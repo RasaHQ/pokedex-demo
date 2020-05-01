@@ -25,7 +25,7 @@
 
 ## say goodbye
 * goodbye
-  - utter_goodbye
+  - utter_goodbyez
 
 ## bot challenge
 * bot_challenge
