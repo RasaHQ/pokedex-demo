@@ -59,11 +59,23 @@
 ## intent:demand_joke
 - got a pokemon gag?
 - could you tell me a joke?
+- please give me a funny
+- know any good pokemon puns?
+- give me a wisecracker
+- tell me of a good antic
+- tell me a joke
+- no, i want to hear a joke
+- tell me another joke
+- give me another one
+- give me a good pokemon joke
+- give me another joke
+- oke, make me laugh one more time
+- make me laugh
 
 ## intent:confirm_exists
 - is [bulbasaur](pokemon_name) a pokemon
 - does [ninetails](pokemon_name) exist
 - ever heard of [pikachu](pokemon_name)
 
-## lookup:pokenames.txt
+## lookup:pokemon_names
   data/pokenames.txt

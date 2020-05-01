@@ -112,3 +112,4 @@ dmypy.json
 
 .idea
 models/
+results/
