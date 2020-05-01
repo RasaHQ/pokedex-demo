@@ -4,6 +4,10 @@
 
 This is a demonstration of a digital assistant that can answer questions about pokemon. This is an open project and anybody can contribute to it. 
 
+It deserves mentioning that this is to be considered a hobby project. We do not guarantee that all the information on pokemon is 100% accurate or canon since we're just a community of fans. We're in no way affiliated with Nintendo or the Pokemon Company.
+
+## Getting Started Locally
+
 To run the assistant locally you'll first need to clone. 
 
 ```
