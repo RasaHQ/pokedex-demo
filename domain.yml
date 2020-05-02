@@ -51,6 +51,9 @@ responses:
     - text: What does Moeowth see when it looks in the mirror? A copy-cat!
     - text: When does a Gastly eat breakfast? In the moaning.
     - text: Which Pokemon does Dracula like most? Koffin'
+    - text: What's everybody's favorite dance in the Pokemon world? The PokeBall!
+    - text: I absol-utely love Pokemon!
+    - text: Check the laundry, I found one of your Sawk.
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
