@@ -77,5 +77,13 @@
 - does [ninetails](pokemon_name) exist
 - ever heard of [pikachu](pokemon_name)
 
-## lookup:pokemon_names
+## intent: faq/what_is_pokemon
+- what is pokemon?
+- can you tell me what pokemon is?
+
+## intent: faq/how_many
+- how many pokemon are there?
+- are there a lot of pokemon?
+
+## lookup:pokemon_name
   data/pokenames.txt

@@ -7,8 +7,10 @@ actions:
 - utter_goodbye
 - utter_iamabot
 - utter_joke
+- respond_faq
 
 intents:
+- faq
 - greet
 - goodbye
 - affirm

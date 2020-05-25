@@ -40,3 +40,7 @@
   - utter_joke
 * confirm_exists
   - action_check_existence
+
+## faq
+* faq
+  - respond_faq

@@ -57,6 +57,14 @@ handle this interactively via;
 rasa interactive
 ```
 
+## Features 
+
+The digital assistant cannot do much yet, but here's some of the features;
+
+- checking if a given pokemon name indeed does exist
+- retreival of some basic pokemon-themed jokes
+- very basic faq
+
 ## Contributing
 
 If you're interested in expanding what pokebot can do; we're all ears!
