@@ -4,6 +4,8 @@
   - utter_greet
 * mood_great
   - utter_happy
+* query_knowledge_base
+  - action_query_knowledge_base
 
 ## sad path 1
 * greet
@@ -40,3 +42,7 @@
   - utter_joke
 * confirm_exists
   - action_check_existence
+
+## pokemon_faq
+* query_knowledge_base
+  - action_query_knowledge_base

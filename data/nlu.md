@@ -77,5 +77,9 @@
 - does [ninetails](pokemon_name) exist
 - ever heard of [pikachu](pokemon_name)
 
+## intent:query_knowledge_base
+- what's [pokemon](object_type:pokemon) [number](attribute:id)?
+- do you know the [id](attribute:id) of [pokemon_name](object_type:pokemon)?
+  
 ## lookup:pokemon_names
   data/pokenames.txt
