@@ -78,8 +78,7 @@
 - ever heard of [pikachu](pokemon_name)
 
 ## intent:query_knowledge_base
-- what's [pokemon](object_type:pokemon) [number](attribute:id)?
-- do you know the [id](attribute:id) of [pokemon_name](object_type:pokemon)?
+- mention a few [pokemons](object_type:pokemon).
   
-## lookup:pokemon_names
+## lookup:pokemon_name
   data/pokenames.txt
