@@ -79,6 +79,9 @@
 
 ## intent:query_knowledge_base
 - mention a few [pokemons](object_type:pokemon).
+- give me some random [pokemons](object_type:pokemon).
+- what are some [pokemons](object_type:pokemon)?
+- can you give examples of [pokemons](object_type:pokemon)?
   
 ## lookup:pokemon_name
   data/pokenames.txt
