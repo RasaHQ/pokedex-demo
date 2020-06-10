@@ -7,9 +7,11 @@ actions:
 - utter_goodbye
 - utter_iamabot
 - utter_joke
+- respond_faq
 - action_query_knowledge_base
 
 intents:
+- faq
 - greet
 - goodbye
 - affirm

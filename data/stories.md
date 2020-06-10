@@ -43,6 +43,10 @@
 * confirm_exists
   - action_check_existence
 
+## faq
+* faq
+  - respond_faq
+
 ## pokemon_faq
 * query_knowledge_base
   - action_query_knowledge_base
