@@ -13,6 +13,8 @@
 - goodbye
 - see you around
 - see you later
+- Ciao
+- later
 
 ## intent:affirm
 - yes
@@ -85,6 +87,12 @@
 ## intent: faq/how_many
 - how many pokemon are there?
 - are there a lot of pokemon?
+
+## intent:faq/ask_berries
+- what are pokemon berries?
+- tell me about pokemon berries
+- what are berries?
+- what about these berries?
 
 ## lookup:pokemon_name
   data/pokenames.txt
