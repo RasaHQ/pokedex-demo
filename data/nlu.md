@@ -13,6 +13,8 @@
 - goodbye
 - see you around
 - see you later
+- Ciao
+- later
 
 ## intent:affirm
 - yes
