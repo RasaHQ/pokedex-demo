@@ -8,6 +8,7 @@ actions:
 - utter_iamabot
 - utter_joke
 - respond_faq
+- action_query_knowledge_base
 
 intents:
 - faq
@@ -20,9 +21,26 @@ intents:
 - bot_challenge
 - demand_joke
 - confirm_exists
+- query_knowledge_base
 
 entities:
 - pokemon_name
+- object_type
+- attribute
+- pokemon
+- mention
+
+slots:
+  object_type:
+    type: unfeaturized
+  attribute:
+    type: unfeaturized
+  pokemon_name:
+    type: unfeaturized
+  pokemon:
+    type: unfeaturized
+  mention:
+    type: unfeaturized
 
 responses:
   utter_greet:
@@ -56,6 +74,11 @@ responses:
     - text: What's everybody's favorite dance in the Pokemon world? The PokeBall!
     - text: I absol-utely love Pokemon!
     - text: Check the laundry, I found one of your Sawk.
+
+  utter_ask_rephrase:
+    - text: "Sorry, I'm not sure I understand. Could you rephrase it?"
+    - text: "Could you please rephrase your message? I didn't quite get that."
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

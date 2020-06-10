@@ -4,6 +4,8 @@
   - utter_greet
 * mood_great
   - utter_happy
+* query_knowledge_base
+  - action_query_knowledge_base
 
 ## sad path 1
 * greet
@@ -44,3 +46,7 @@
 ## faq
 * faq
   - respond_faq
+
+## pokemon_faq
+* query_knowledge_base
+  - action_query_knowledge_base
