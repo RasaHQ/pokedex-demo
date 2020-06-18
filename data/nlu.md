@@ -94,6 +94,11 @@
 - what are berries?
 - what about these berries?
 
+## intent:faq/pokemon_history
+- when was Pokemon created?
+- who created Pokemon?
+- what's the history of Pokemon?
+
 ## lookup:pokemon_name
   data/pokenames.txt
 
