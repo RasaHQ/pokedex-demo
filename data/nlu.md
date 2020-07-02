@@ -1,4 +1,3 @@
-
 ## intent:greet
 - hey
 - hello
@@ -79,12 +78,17 @@
 - is [bulbasaur](pokemon_name) a pokemon
 - does [ninetails](pokemon_name) exist
 - ever heard of [pikachu](pokemon_name)
+- are [pikachu](pokemon_name) and [charmander](pokemon_name) pokemon?
+- is [rasa](pokemon_name) a pokemon?
+- hey is [rasa](pokemon_name) a pokemon?
+- are [pichuka](pokemon_name) and [charmander](pokemon_name) pokemon?
+- are [snorlax](pokemon_name), [gariddos](pokemon_name) and [dittto](pokemon_name) pokemon?
 
-## intent: faq/what_is_pokemon
+## intent:faq/what_is_pokemon
 - what is pokemon?
 - can you tell me what pokemon is?
 
-## intent: faq/how_many
+## intent:faq/how_many
 - how many pokemon are there?
 - are there a lot of pokemon?
 
@@ -99,15 +103,14 @@
 - who created Pokemon?
 - what's the history of Pokemon?
 
-## lookup:pokemon_name
-  data/pokenames.txt
-
 ## intent:query_knowledge_base
-- mention a few [pokemons](object_type:pokemon).
-- give me some random [pokemons](object_type:pokemon).
-- what are some [pokemons](object_type:pokemon)?
-- can you give examples of [pokemons](object_type:pokemon)?
-  
+- mention a few [pokemons]{"entity": "object_type", "value": "pokemon"}.
+- give me some random [pokemons]{"entity": "object_type", "value": "pokemon"}.
+- what are some [pokemons]{"entity": "object_type", "value": "pokemon"}?
+- can you give examples of [pokemons]{"entity": "object_type", "value": "pokemon"}?
+
+## synonym:pokemon
+- pokemons
+
 ## lookup:pokemon_name
   data/pokenames.txt
-

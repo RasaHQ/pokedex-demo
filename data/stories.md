@@ -50,3 +50,24 @@
 ## pokemon_faq
 * query_knowledge_base
   - action_query_knowledge_base
+
+## interactive_story_1
+* greet
+    - utter_greet
+* confirm_exists{"pokemon_name": "charmander"}
+    - slot{"pokemon_name": "charmander"}
+    - action_check_existence
+* confirm_exists{"pokemon_name": "rasa"}
+    - slot{"pokemon_name": "rasa"}
+    - action_check_existence
+
+## interactive_story_1
+* confirm_exists{"pokemon_name": "rasa"}
+    - slot{"pokemon_name": "rasa"}
+    - action_check_existence
+* confirm_exists{"pokemon_name": "charmander"}
+    - slot{"pokemon_name": "charmander"}
+    - action_check_existence
+* confirm_exists{"pokemon_name": "dittto"}
+    - slot{"pokemon_name": "dittto"}
+    - action_check_existence
