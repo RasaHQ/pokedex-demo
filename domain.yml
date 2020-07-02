@@ -1,18 +1,25 @@
 actions:
 - action_check_existence
-- utter_greet
+- action_query_knowledge_base
+- respond_faq
+- utter_ask_rephrase
 - utter_cheer_up
 - utter_did_that_help
-- utter_happy
 - utter_goodbye
+- utter_greet
+- utter_happy
 - utter_iamabot
 - utter_joke
-- respond_faq
-- action_query_knowledge_base
-
+entities:
+- attribute
+- mention
+- object_type
+- pokemon
+- pokemon_name
 intents:
-- faq
+- confirm_exists
 - greet
+- faq
 - goodbye
 - affirm
 - deny
@@ -20,65 +27,53 @@ intents:
 - mood_unhappy
 - bot_challenge
 - demand_joke
-- confirm_exists
 - query_knowledge_base
-
-entities:
-- pokemon_name
-- object_type
-- attribute
-- pokemon
-- mention
-
+responses:
+  utter_ask_rephrase:
+  - text: Sorry, I'm not sure I understand. Could you rephrase it?
+  - text: Could you please rephrase your message? I didn't quite get that.
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: Here is something to cheer you up
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: Bye
+  utter_greet:
+  - text: Hey! How are you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_joke:
+  - text: Are you sure you can handle my jokes? You might laugh your Ash off.
+  - text: Why did the Squirtle cross the road? To get to the other tide!
+  - text: What appears over Ash’s head when he gets an idea? A LightBulbasaur
+  - text: Where did Brock take Nurse Joy for a date? The PokeBall
+  - text: What’s better than one Pikachu? PikaTWO
+  - text: What does Moeowth see when it looks in the mirror? A copy-cat!
+  - text: When does a Gastly eat breakfast? In the moaning.
+  - text: Which Pokemon does Dracula like most? Koffin'
+  - text: What's everybody's favorite dance in the Pokemon world? The PokeBall!
+  - text: I absol-utely love Pokemon!
+  - text: Check the laundry, I found one of your Sawk.
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 60
 slots:
-  object_type:
-    type: unfeaturized
   attribute:
     type: unfeaturized
-  pokemon_name:
+  knowledge_base_last_object:
     type: unfeaturized
-  pokemon:
+  knowledge_base_last_object_type:
+    type: unfeaturized
+  knowledge_base_listed_objects:
     type: unfeaturized
   mention:
     type: unfeaturized
-
-responses:
-  utter_greet:
-    - text: Hey! How are you?
-
-  utter_cheer_up:
-    - text: Here is something to cheer you up
-      image: https://i.imgur.com/nGF1K8f.jpg
-
-  utter_did_that_help:
-    - text: Did that help you?
-
-  utter_happy:
-    - text: Great, carry on!
-
-  utter_goodbye:
-    - text: Bye
-
-  utter_iamabot:
-    - text: I am a bot, powered by Rasa.
-
-  utter_joke:
-    - text: Are you sure you can handle my jokes? You might laugh your Ash off.
-    - text: Why did the Squirtle cross the road? To get to the other tide!
-    - text: What appears over Ash’s head when he gets an idea? A LightBulbasaur
-    - text: Where did Brock take Nurse Joy for a date? The PokeBall
-    - text: What’s better than one Pikachu? PikaTWO
-    - text: What does Moeowth see when it looks in the mirror? A copy-cat!
-    - text: When does a Gastly eat breakfast? In the moaning.
-    - text: Which Pokemon does Dracula like most? Koffin'
-    - text: What's everybody's favorite dance in the Pokemon world? The PokeBall!
-    - text: I absol-utely love Pokemon!
-    - text: Check the laundry, I found one of your Sawk.
-
-  utter_ask_rephrase:
-    - text: "Sorry, I'm not sure I understand. Could you rephrase it?"
-    - text: "Could you please rephrase your message? I didn't quite get that."
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  object_type:
+    type: unfeaturized
+  pokemon:
+    type: unfeaturized
+  pokemon_name:
+    type: unfeaturized
