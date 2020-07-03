@@ -30,6 +30,53 @@ class ActionCheckExistence(Action):
         return []
 
 
+class ActionTranslateName(Action):
+    """This action uses the Pokemon DB file
+    to find the translated version of the name.
+    """
+    with open("data/pokemondb.json") as pokemon_db:
+        knowledge = json.load(pokemon_db)
+
+    def name(self) -> Text:
+        return "action_translate_name"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        language = None
+        name = None
+
+        # Get the entity values.
+        for blob in tracker.latest_message['entities']:
+            if blob['entity'] == 'language':
+                language = blob['value']
+            if blob['entity'] == 'pokemon_name':
+                name = blob['value']
+
+        # Resolve the action.
+        if name is None:
+            dispatcher.utter_message(
+                text=f"I do not recognize that Pokemon, are you sure it is correctly spelled?")
+        else:
+            for pokemon in self.knowledge['pokemon']:
+                if pokemon['name'] == name:
+                    # Get the translated name.
+                    translated_name = pokemon.get(
+                        'name_language', {}).get(language)
+
+                    # If a translation exists (for the given language).
+                    if translated_name:
+                        dispatcher.utter_message(
+                            text=f"{name}'s {language} name is {translated_name}."
+                        )
+                    else:
+                        dispatcher.utter_message(
+                            text=f"I don't know that translation."
+                        )
+
+        return []
+
+
 class MyKnowledgeBaseAction(ActionQueryKnowledgeBase):
     def __init__(self):
         knowledge_base = InMemoryKnowledgeBase("data/pokemondb.json")

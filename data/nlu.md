@@ -84,6 +84,11 @@
 - are [pichuka](pokemon_name) and [charmander](pokemon_name) pokemon?
 - are [snorlax](pokemon_name), [gariddos](pokemon_name) and [dittto](pokemon_name) pokemon?
 
+## intent:name_translation
+- What is the [french](language) name of [Snorlax](pokemon_name)?
+- What is the [spanish](language) name of [Snorlax](pokemon_name)?
+- What is the [german](language) name of [Snorlax](pokemon_name)?
+
 ## intent:faq/what_is_pokemon
 - what is pokemon?
 - can you tell me what pokemon is?

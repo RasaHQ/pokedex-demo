@@ -42,6 +42,8 @@
   - utter_joke
 * confirm_exists
   - action_check_existence
+* name_translation
+  - action_translate_name
 
 ## faq
 * faq

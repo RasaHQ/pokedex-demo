@@ -1,5 +1,6 @@
 actions:
 - action_check_existence
+- action_translate_name
 - action_query_knowledge_base
 - respond_faq
 - utter_ask_rephrase
@@ -16,8 +17,10 @@ entities:
 - object_type
 - pokemon
 - pokemon_name
+- language
 intents:
 - confirm_exists
+- name_translation
 - greet
 - faq
 - goodbye

@@ -4299,6 +4299,11 @@
         {
             "id": 143,
             "name": "Snorlax",
+            "name_language": {
+                "french": "Ronflex",
+                "german": "Relaxo",
+                "spanish": "Snorlax"
+            },
             "species": "Sleeping Pokemon",
             "type": [
                 "Normal"
