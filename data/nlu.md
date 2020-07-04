@@ -86,7 +86,7 @@
 
 ## intent:name_translation
 - What is the [french](language) name of [Snorlax](pokemon_name)?
-- Do you know how [Snorlax](pokemon_name) is called in [spanish](language)?
+- Do you know how [Mewtwo](pokemon_name) is called in [german](language)?
 - Translate [Snorlax](pokemon_name) to [german](language).
 
 ## intent:faq/what_is_pokemon
@@ -119,3 +119,6 @@
 
 ## lookup:pokemon_name
   data/pokenames.txt
+
+## lookup:languages
+  data/languages.txt

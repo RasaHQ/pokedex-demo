@@ -37,6 +37,8 @@ class ActionTranslateName(Action):
     with open("data/pokemondb.json") as pokemon_db:
         knowledge = json.load(pokemon_db)
 
+    languages = Path("data/languages.txt").read_text().split("\n")
+
     def name(self) -> Text:
         return "action_translate_name"
 
@@ -53,26 +55,30 @@ class ActionTranslateName(Action):
             if blob['entity'] == 'pokemon_name':
                 name = blob['value']
 
-        # Resolve the action.
+        # Now we resolve the action.
+        # But first, let's check if the Pokemon and language entity are valid.
         if name is None:
             dispatcher.utter_message(
-                text=f"I do not recognize that Pokemon, are you sure it is correctly spelled?")
-        else:
-            for pokemon in self.knowledge['pokemon']:
-                if pokemon['name'] == name:
-                    # Get the translated name.
-                    translated_name = pokemon.get(
-                        'name_language', {}).get(language)
+                text=f"I do not recognize that name.")
+            return []
 
-                    # If a translation exists (for the given language).
-                    if translated_name:
-                        dispatcher.utter_message(
-                            text=f"{name}'s {language} name is {translated_name}."
-                        )
-                    else:
-                        dispatcher.utter_message(
-                            text=f"I don't know that translation."
-                        )
+        if language not in self.languages:
+            dispatcher.utter_message(
+                text=f"I do not yet support that language.")
+            return []
+
+        # If the Pokemon and language are found...
+        for pokemon in self.knowledge['pokemon']:
+            if pokemon['name'] != name:
+                continue
+
+            # Get the translated name.
+            translated_name = pokemon.get(
+                'name_language', {}).get(language)
+
+            dispatcher.utter_message(
+                text=f"{name}'s {language} name is {translated_name}."
+            )
 
         return []
 
