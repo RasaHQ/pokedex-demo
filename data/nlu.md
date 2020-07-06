@@ -83,6 +83,8 @@
 - hey is [rasa](pokemon_name) a pokemon?
 - are [pichuka](pokemon_name) and [charmander](pokemon_name) pokemon?
 - are [snorlax](pokemon_name), [gariddos](pokemon_name) and [dittto](pokemon_name) pokemon?
+- does [megaton](pokemon_name) exist as a pokemon?
+- do you recognize [ratataflap](pokemon_name)?
 
 ## intent:faq/what_is_pokemon
 - what is pokemon?
