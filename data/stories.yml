@@ -1,0 +1,100 @@
+version: "3.0"
+stories:
+  - story: happy path
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: query_knowledge_base
+    - action: action_query_knowledge_base
+
+  - story: sad path 1
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+  - story: sad path 2
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_goodbye
+
+  - story: say goodbye
+    steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+  - story: bot challenge
+    steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+
+  - story: bot challenge
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: bot_challenge
+    - action: utter_iamabot
+    - intent: demand_joke
+    - action: utter_joke
+    - intent: confirm_exists
+    - action: action_check_existence
+
+
+  - story: pokemon_faq
+    steps:
+    - intent: query_knowledge_base
+    - action: action_query_knowledge_base
+
+  - story: interactive_story_1
+    steps:
+    - intent: greet
+    - action: utter_greet
+
+  - story: interactive_story_1
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: confirm_exists
+      entities:
+      - pokemon_name: charmander
+    - slot_was_set:
+      - pokemon_name: charmander
+    - action: action_check_existence
+    - intent: confirm_exists
+      entities:
+      - pokemon_name: rasa
+    - slot_was_set:
+      - pokemon_name: rasa
+    - action: action_check_existence
+
+  - story: interactive_story_1
+    steps:
+    - intent: confirm_exists
+      entities:
+      - pokemon_name: rasa
+    - slot_was_set:
+      - pokemon_name: rasa
+    - action: action_check_existence
+    - intent: confirm_exists
+      entities:
+      - pokemon_name: charmander
+    - slot_was_set:
+      - pokemon_name: charmander
+    - action: action_check_existence
+    - intent: confirm_exists
+      entities:
+      - pokemon_name: dittto
+    - slot_was_set:
+      - pokemon_name: dittto
+    - action: action_check_existence
