@@ -111,5 +111,8 @@ venv.bak/
 dmypy.json
 
 .idea
+
+# rasa stuff
 models/
 results/
+.rasa/

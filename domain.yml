@@ -1,33 +1,34 @@
+version: "3.0"
 actions:
-- action_check_existence
-- action_query_knowledge_base
-- respond_faq
-- utter_ask_rephrase
-- utter_cheer_up
-- utter_did_that_help
-- utter_goodbye
-- utter_greet
-- utter_happy
-- utter_iamabot
-- utter_joke
+  - action_check_existence
+  - action_query_knowledge_base
+  - respond_faq
+  - utter_ask_rephrase
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_goodbye
+  - utter_greet
+  - utter_happy
+  - utter_iamabot
+  - utter_joke
 entities:
-- attribute
-- mention
-- object_type
-- pokemon
-- pokemon_name
+  - attribute
+  - mention
+  - object_type
+  - pokemon
+  - pokemon_name
 intents:
-- confirm_exists
-- greet
-- faq
-- goodbye
-- affirm
-- deny
-- mood_great
-- mood_unhappy
-- bot_challenge
-- demand_joke
-- query_knowledge_base
+  - confirm_exists
+  - greet
+  - faq
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - demand_joke
+  - query_knowledge_base
 responses:
   utter_ask_rephrase:
   - text: Sorry, I'm not sure I understand. Could you rephrase it?
@@ -57,23 +58,49 @@ responses:
   - text: What's everybody's favorite dance in the Pokemon world? The PokeBall!
   - text: I absol-utely love Pokemon!
   - text: Check the laundry, I found one of your Sawk.
+
 session_config:
   carry_over_slots_to_new_session: true
   session_expiration_time: 60
+
 slots:
   attribute:
-    type: unfeaturized
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
   knowledge_base_last_object:
-    type: unfeaturized
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom    
   knowledge_base_last_object_type:
-    type: unfeaturized
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
   knowledge_base_listed_objects:
-    type: unfeaturized
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
   mention:
-    type: unfeaturized
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
   object_type:
-    type: unfeaturized
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
   pokemon:
-    type: unfeaturized
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
   pokemon_name:
-    type: unfeaturized
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
